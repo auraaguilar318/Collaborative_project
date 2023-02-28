@@ -7,5 +7,34 @@ output: html_document
 Mis cambios en RStudio
 Cambios de Rodrigo
 
+## Practical alignment
 
-holi
+
+# Using bwa index of e.coli genome align reads from a FNR ChIP-seq experiment:
+
+Burrows-Wheeler Alignment (BWA) is a mapping software of low divergence samples to a reference genome. Before do alignment we need the reference genome indexed, because with this structure we get a faster localization and access to the data. Thus we run:
+
+>bwa index Escherichia_coli_K12_MG1655.fasta
+
+The bwa command can index the unzipped .fasta file.
+
+to obtain five new files, that bwa will use:
+
+
+
+• 
+
+The Fumarate Nitrate Reduction (FNR) is a transcriptional regulator of the transition between aerobic and anaerobic growth of bacterias like Escherichia coli (E. Coli).
+Then, we want to obtain the promoters sequences by ChIP-seq in order to align and obtain their positions.
+
+The command to perform the alignment is bwa aln:
+
+>bwa aln Escherichia_coli_K12_MG1655.fasta SRX189773_FNR_ChIP.fastq > SRX189773_FNR_ChIP_alignment.sai
+
+aln is a command that invokes different algorithms for the alignment, for this we input the reference genome at first, the results of the ChIP-seq experiment, and we put the name of the .sai file, that is an intermediate file containing the suffix array coordinate of all short reads loaded in. 
+
+The .sai file from the bwa aln step is in a binary format. bwa samse command helps us to create a human-readable format.
+
+> bwa samse Escherichia_coli_K12_MG1655.fasta SRX189773_FNR_ChIP_alignment.sai SRX189773_FNR_ChIP.fastq > SRX189773_FNR_ChIP_alignment.sam
+
+We give to the command the genome reference file .fasta, the .sai file and the sequencing results .fastq. The output will be a .sam file. 
