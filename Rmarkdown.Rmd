@@ -7,10 +7,10 @@ output: html_document
 Mis cambios en RStudio
 Cambios de Rodrigo
 
-## Practical alignment
+# Practical alignment
 
 
-# Using bwa index of e.coli genome align reads from a FNR ChIP-seq experiment:
+## Using bwa index of e.coli genome align reads from a FNR ChIP-seq experiment:
 
 Burrows-Wheeler Alignment (BWA) is a mapping software of low divergence samples to a reference genome. Before do alignment we need the reference genome indexed, because with this structure we get a faster localization and access to the data. Thus we run:
 
@@ -20,12 +20,11 @@ The bwa command can index the unzipped .fasta file.
 
 to obtain five new files, that bwa will use:
 
+.
 
-
-• 
+Then, we want to obtain the promoters sequences by ChIP-seq in order to align and obtain their positions.
 
 The Fumarate Nitrate Reduction (FNR) is a transcriptional regulator of the transition between aerobic and anaerobic growth of bacterias like Escherichia coli (E. Coli).
-Then, we want to obtain the promoters sequences by ChIP-seq in order to align and obtain their positions.
 
 The command to perform the alignment is bwa aln:
 
