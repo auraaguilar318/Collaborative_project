@@ -2,7 +2,12 @@
 title: "Rmarkdown"
 author: "Aura"
 date: "2023-02-27"
-output: html_document
+output: 
+  prettydoc::html_pretty:
+    toc: yes
+    toc_depth: 6
+    theme: cayman
+
 ---
 Mis cambios en RStudio
 Cambios de Rodrigo
