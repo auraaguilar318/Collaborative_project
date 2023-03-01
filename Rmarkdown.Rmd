@@ -98,3 +98,11 @@ This is the header of the sam file obtained:
 ![](mus_musculus_CEBPA_liver_ERR005132.sam.png){width=500px}
   
   
+## References
+  
+- Tolla, D. A., & Savageau, M. A. (2010). Regulation of aerobic-to-anaerobic transitions by the FNR cycle in Escherichia coli. Journal of molecular biology, 397(4), 893-905.                                                                                                                                                                                      
+- DBMS Indexing in DBMS - javatpoint. (2021). www.javatpoint.com. https://www.javatpoint.com/indexing-in-dbms                                                               
+- bwa.1. (2013). https://bio-bwa.sourceforge.net/bwa.shtml                                                                                              
+ 
+- Práctica 1. Control de calidad de la secuenciación con FastQC - B22ILMOMBMS15-16. (s. f.). https://sites.google.com/site/b22ilmombms1516/home/practica-1-control-de-calidad-de-la-secuenciacion-con-fastqc
+  
