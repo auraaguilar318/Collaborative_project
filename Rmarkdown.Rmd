@@ -19,8 +19,9 @@ Cambios de Rodrigo
 
 Burrows-Wheeler Alignment (BWA) is a mapping software of low divergence samples to a reference genome. Before do alignment we need the reference genome indexed, because with this structure we get a faster localization and access to the data. Thus we run:
 
->bwa index Escherichia_coli_K12_MG1655.fasta
-
+```{bash eval=FALSE}
+bwa index Escherichia_coli_K12_MG1655.fasta
+```
 The bwa command can index the unzipped .fasta file.
 
 to obtain five new files, that bwa will use:
