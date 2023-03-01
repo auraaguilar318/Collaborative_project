@@ -3,7 +3,8 @@ title: "Rmarkdown"
 author: "Aura"
 date: "2023-02-27"
 output: 
-  keep_md: true
+  html_document:
+    keep_md: true
   prettydoc::html_pretty:
     toc: yes
     toc_depth: 6
