@@ -29,9 +29,7 @@ to obtain five new files, that bwa will use:
 <div>
   ![](index.png){width = 1000}
 
-Then, we want to obtain the promoters sequences by ChIP-seq in order to align and obtain their positions.
-
-The Fumarate Nitrate Reduction (FNR) is a transcriptional regulator of the transition between aerobic and anaerobic growth of bacterias like Escherichia coli (E. Coli).
+Then, we want to obtain the promoters sequences of FNR by ChIP-seq in order to align and obtain their positions. The Fumarate Nitrate Reduction (FNR) is a transcriptional regulator of the transition between aerobic and anaerobic growth of bacterias like Escherichia coli (E. Coli).
 
 The command to perform the alignment is bwa aln:
 
