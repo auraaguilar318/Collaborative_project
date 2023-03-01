@@ -77,8 +77,17 @@ Here we can´t see a good quality in the mayority of the reads
 All the others statistics information seem to be good enough
   
 If we would like to improve the quality we can use the next code: 
-  
+
   
 ## Using the available indexed genomes in the cluster (/mnt/Archives/genome/) align reads of a mouse ChIP-seq experiment to the genome.
 
-bioinfoII/data/alignment
+```{bash eval=FALSE}
+bwa aln /mnt/Archives/genome/mouse/mm10/UCSC/bwa-0.7.15-index/index/mm10.fa ./mus_musculus_CEBPA_liver_ERR005132.fastq.gz > mus_musculus_CEBPA_liver_ERR005132_alignment2.sai
+  
+bwa samse /mnt/Archives/genome/mouse/mm10/UCSC/bwa-0.7.15-index/index/mm10.fa ./mus_musculus_CEBPA_liver_ERR005132_alignment2.sai ./mus_musculuqs_CEBPA_liver_ERR005132.fastq.gz > mus_musculus_CEBPA_liver_ERR005132.sam
+```
+This is the header of the sam file obtained: 
+
+![](mus_musculus_CEBPA_liver_ERR005132.sam.png){width=500px}
+  
+  
