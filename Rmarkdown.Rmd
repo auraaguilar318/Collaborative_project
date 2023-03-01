@@ -78,6 +78,13 @@ All the others statistics information seem to be good enough
   
 If we would like to improve the quality we can use the next code: 
 
+```{bash eval=FALSE}
+trim_galore SRX189773_FNR_ChIP.fastq
+``` 
+By default with this we can eliminate the adapators and improve the quality a little .
+
+![](fastqc_report_trimmed.png){width=500px}
+  
   
 ## Using the available indexed genomes in the cluster (/mnt/Archives/genome/) align reads of a mouse ChIP-seq experiment to the genome.
 
